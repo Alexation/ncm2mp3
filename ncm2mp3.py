@@ -75,6 +75,7 @@ def file_name(file_dir):
             if os.path.splitext(file)[1] == '.ncm':
                 dump(file)
                 print('转换完成: ', file)
+                os.delete(file)
 
 
 if __name__ == '__main__':
